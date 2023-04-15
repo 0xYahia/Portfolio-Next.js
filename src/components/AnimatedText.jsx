@@ -42,6 +42,8 @@ function AnimatedText({ text, className = '' }) {
             key={`${word}-${index}`}
             className="inline-block"
             variants={singleWord}
+            initial="initial"
+            animate="animate"
           >
             {word}&nbsp;
           </motion.span>
