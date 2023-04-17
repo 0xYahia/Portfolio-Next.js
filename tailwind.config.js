@@ -18,6 +18,9 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
       },
+      backgroundImage: {
+        'banner-bg': "url('/images/darkbg.jpg')",
+      },
     },
   },
   plugins: [],

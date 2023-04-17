@@ -13,23 +13,23 @@ const About = () => {
         <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
         <div className="grid w-full grid-cols-8 gap-16">
           <div className="col-span-3 flex flex-col items-start justify-start">
-            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+            <h2 className="mb-4 text-lg font-bold uppercase text-light/75">
               Biography
             </h2>
 
-            <p className="font-medium">
+            <p className="text-light font-medium">
               Hi, I'm CodeBucks, a web developer and UI/UX designer with a
               passion for creating beautiful, functional, and user-centered
               digital experiences. With 4 years of experience in the field. I am
               always looking for new and innovative ways to bring my clients'
               visions to life.
             </p>
-            <p className="my-4 font-medium">
+            <p className="my-4 font-medium text-red-300">
               I believe that design is about more than just making things look
               pretty – it's about solving problems and creating intuitive,
               enjoyable experiences for users.{' '}
             </p>
-            <p className="font-medium">
+            <p className="font-medium text-red-600">
               Whether I'm working on a website, mobile app, or other digital
               product, I bring my commitment to design excellence and
               user-centered thinking to every project I work on. I look forward
@@ -46,21 +46,21 @@ const About = () => {
             />
           </div>
           <div className="col-span-2 flex flex-col items-end justify-between">
-            <div className="flex flex-col items-end justify-center">
-              <span className="inline-block text-7xl font-bold">50+</span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+            <div className="flex flex-col items-end justify-center text-light">
+              <span className="inline-block text-7xl font-bold ">50+</span>
+              <h2 className="text-xl font-medium capitalize text-light/75">
                 satisfied clients
               </h2>
             </div>
-            <div className="flex flex-col items-end justify-center">
+            <div className="flex flex-col items-end justify-center text-light">
               <span className="inline-block text-7xl font-bold">40+</span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize text-light/75">
                 projects completed
               </h2>
             </div>
-            <div className="flex flex-col items-end justify-center">
-              <span className="inline-block text-7xl font-bold">2+</span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+            <div className="flex flex-col items-end justify-center text-light">
+              <span className="inline-block text-7xl font-bold ">2+</span>
+              <h2 className="text-xl font-medium capitalize text-light/75">
                 years of experience
               </h2>
             </div>

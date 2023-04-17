@@ -9,7 +9,7 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 const Landing = () => {
   return (
-    <main className="flex items-center text-dark w-full min-h-screen">
+    <main className="flex items-center text-light w-full min-h-screen">
       <Layout className="pt-0">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
@@ -29,7 +29,7 @@ const Landing = () => {
               <Link
                 href="/cv.pdf"
                 target="_blank"
-                className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark transition-all"
+                className="flex items-center bg-green-400	 text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-transparent hover:text-green-400 border-2 border-solid border-transparent hover:border-green-400 transition-all"
                 download={true}
               >
                 Resume <LinkArrow className={'w-6 ml-1'} />
@@ -37,7 +37,7 @@ const Landing = () => {
               <Link
                 href="mailto:mohamdyahia@outlook.com"
                 target="_blank"
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                className="ml-4 text-lg font-medium capitalize text-light hover:text-green-400"
               >
                 Contact
               </Link>
