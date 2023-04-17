@@ -1,11 +1,11 @@
-import Layout from '../components/Layout';
-import Image from 'next/image';
-import profilePic1 from '../../public/images/profile/profile.png';
-import AnimatedText from '../components/AnimatedText';
-import Link from 'next/link';
-import { LinkArrow } from '../components/Icons';
-import HireMe from '@/components/HireMe';
-import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
+import Layout from "../components/Layout";
+import Image from "next/image";
+import profilePic1 from "../../public/images/profile/profile.png";
+import AnimatedText from "../components/AnimatedText";
+import Link from "next/link";
+import { LinkArrow } from "../components/Icons";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 const Landing = () => {
   return (
@@ -22,8 +22,9 @@ const Landing = () => {
             />
             <p className="my-4 text-base font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas
-              into innovative web applications. Explore my latest projects and
-              articles, showcasing my expertise in React.js and web development.
+              into innovative web applications&#46; Explore my latest projects
+              and articles, showcasing my expertise in React&#46;js and web
+              development&#46;
             </p>
             <div className="flex items-center self-start mt-2">
               <Link
@@ -32,7 +33,7 @@ const Landing = () => {
                 className="flex items-center bg-green-400	 text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-transparent hover:text-green-400 border-2 border-solid border-transparent hover:border-green-400 transition-all"
                 download={true}
               >
-                Resume <LinkArrow className={'w-6 ml-1'} />
+                Resume <LinkArrow className={"w-6 ml-1"} />
               </Link>
               <Link
                 href="mailto:mohamdyahia@outlook.com"
