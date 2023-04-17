@@ -18,20 +18,20 @@ const About = () => {
             </h2>
 
             <p className="text-light font-medium">
-              Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-              passion for creating beautiful, functional, and user-centered
-              digital experiences. With 4 years of experience in the field. I am
-              always looking for new and innovative ways to bring my clients'
-              visions to life.
+              Hi, I&apos;m CodeBucks&rsquo; a web developer and UI/UX designer
+              with a passion for creating beautiful&rsquo; functional&rsquo; and
+              user-centered digital experiences. With 4 years of experience in
+              the field. I am always looking for new and innovative ways to
+              bring my clients&apos; visions to life.
             </p>
-            <p className="my-4 font-medium text-red-300">
+            <p className="my-4 font-medium">
               I believe that design is about more than just making things look
-              pretty – it's about solving problems and creating intuitive,
-              enjoyable experiences for users.{' '}
+              pretty – it&apos;s about solving problems and creating
+              intuitive&rsquo; enjoyable experiences for users.
             </p>
             <p className="font-medium text-red-600">
-              Whether I'm working on a website, mobile app, or other digital
-              product, I bring my commitment to design excellence and
+              Whether I&apos;m working on a website, mobile app&rsquo; or other
+              digital product, I bring my commitment to design excellence and
               user-centered thinking to every project I work on. I look forward
               to the opportunity to bring my skills and passion to your next
               project.
