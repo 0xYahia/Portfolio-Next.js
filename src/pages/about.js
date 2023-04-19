@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import profilePic2 from '../../public/images/profile/profile3.JPG';
-import AnimatedText from '../components/AnimatedText';
-import Layout from '../components/Layout';
-import { useEffect, useRef } from 'react';
-import { useInView, useMotionValue, useSpring } from 'framer-motion';
-import Skills from '@/components/Skills';
+import Image from "next/image";
+// import profilePic2 from "../../public/images/profile/profile3.JPG";
+import AnimatedText from "../components/AnimatedText";
+import Layout from "../components/Layout";
+import { useEffect, useRef } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/Skills";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -19,7 +19,7 @@ const AnimatedNumbers = ({ value }) => {
   }, [isInView, value, motionValue]);
 
   useEffect(() => {
-    springValue.on('change', (latest) => {
+    springValue.on("change", (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
@@ -37,7 +37,7 @@ const About = () => {
     >
       <Layout className="pt-16">
         <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
-        <div className="grid w-full grid-cols-8 gap-16">
+        <div className="grid w-full grid-cols-8 gap-16 text-light">
           <div className="col-span-3 flex flex-col items-start justify-start">
             <h2 className="mb-4 text-lg font-bold uppercase text-light/75">
               Biography
@@ -53,7 +53,7 @@ const About = () => {
             <p className="my-4 font-medium">
               I believe that design is about more than just making things look
               pretty – it's about solving problems and creating intuitive,
-              enjoyable experiences for users.{' '}
+              enjoyable experiences for users.{" "}
             </p>
             <p className="font-medium">
               Whether I'm working on a website, mobile app, or other digital
@@ -66,7 +66,9 @@ const About = () => {
           <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark  p-8">
             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
             <Image
-              src={profilePic2}
+              src="/images/profile/profile3.JPG"
+              width={80}
+              height={80}
               alt="Yahia"
               className="w-full h-auto rounded-2xl"
             />
