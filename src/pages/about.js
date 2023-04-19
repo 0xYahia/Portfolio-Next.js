@@ -64,7 +64,7 @@ const About = () => {
             </p>
           </div>
           <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark  p-8">
-            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-light" />
             <Image
               src="/images/profile/profile3.JPG"
               width={80}
