@@ -1,11 +1,11 @@
-import Layout from "../components/Layout";
-import Image from "next/image";
-import profilePic1 from "../../public/images/profile/profile.png";
-import AnimatedText from "../components/AnimatedText";
-import Link from "next/link";
-import { LinkArrow } from "../components/Icons";
-import HireMe from "@/components/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import Layout from '../components/Layout';
+import Image from 'next/image';
+import profilePic1 from '../../public/images/profile/profile.png';
+import AnimatedText from '../components/AnimatedText';
+import Link from 'next/link';
+import { LinkArrow } from '../components/Icons';
+import HireMe from '@/components/HireMe';
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 const Landing = () => {
   return (
@@ -33,7 +33,7 @@ const Landing = () => {
                 className="flex items-center bg-green-400	 text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-transparent hover:text-green-400 border-2 border-solid border-transparent hover:border-green-400 transition-all"
                 download={true}
               >
-                Resume <LinkArrow className={"w-6 ml-1"} />
+                Resume <LinkArrow className={'w-6 ml-1'} />
               </Link>
               <Link
                 href="mailto:mohamdyahia@outlook.com"
@@ -46,7 +46,7 @@ const Landing = () => {
           </div>
         </div>
       </Layout>
-      <HireMe />
+      {/* <HireMe /> */}
       <div className="absolute right-8 bottom-8 inline-block w-24">
         <Image src={lightBulb} alt="Lightbulb" className="w-full h-auto" />
       </div>

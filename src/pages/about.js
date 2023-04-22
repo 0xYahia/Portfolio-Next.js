@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import profilePic2 from "../../public/images/profile/profile3.JPG";
 import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
 import { useEffect, useRef } from "react";
