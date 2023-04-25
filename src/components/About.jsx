@@ -1,9 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { fadeIn, textVariant } from '../utils/motion';
+import { motion } from 'framer-motion';
+
 import { services } from '../constants';
+import SectionWrapper from '@/hoc';
 import Image from 'next/image';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -27,7 +29,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+        <p className="text-gray-300 sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
           Introduction
         </p>
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
@@ -36,7 +38,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="text-gray-300 mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
@@ -53,4 +55,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, 'about');
