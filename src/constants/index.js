@@ -23,7 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
-} from '../assets';
+} from '../../public/assets';
 
 export const services = [
   {
@@ -117,7 +117,7 @@ export const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
+    name: 'ReactJS',
     icon: reactjs,
   },
   {
@@ -129,17 +129,17 @@ export const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Node JS',
+    name: 'NodeJS',
     icon: nodejs,
   },
   {
     name: 'MongoDB',
     icon: mongodb,
   },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
+  // {
+  //   name: 'ThreeS',
+  //   icon: threejs,
+  // },
   {
     name: 'git',
     icon: git,
