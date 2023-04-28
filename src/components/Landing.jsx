@@ -46,7 +46,7 @@ const Landing = () => {
           </div>
         </div>
       </Layout>
-      {/* <HireMe /> */}
+      <HireMe />
       <div className="absolute right-8 bottom-8 inline-block w-24">
         <Image src={lightBulb} alt="Lightbulb" className="w-full h-auto" />
       </div>
