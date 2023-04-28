@@ -5,8 +5,7 @@ import { motion } from 'framer-motion';
 import { services } from '../constants';
 import { SectionWrapper } from '@/hoc';
 import Image from 'next/image';
-import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
-import { styles } from '@/styles';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
