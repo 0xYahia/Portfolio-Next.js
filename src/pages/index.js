@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Landing from '@/components/Landing';
 import About from '../components/About';
+import Experience from '@/components/Experience';
 
 export default function Home() {
   return (
@@ -11,8 +12,7 @@ export default function Home() {
       </Head>
       <Landing />
       <About />
+      <Experience />
     </>
   );
 }
-
-// 1:12
