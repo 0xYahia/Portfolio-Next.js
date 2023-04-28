@@ -1,6 +1,5 @@
 import { SectionWrapper } from '@/hoc';
 import BallCanvas from './canvas/Ball';
-// import { BallCanvas } from "./canvas";
 import { technologies } from '@/constants';
 
 const Tech = () => {
@@ -10,11 +9,11 @@ const Tech = () => {
         Skills
       </h2>
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technology) => {
+        {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </div>;
-        })}
+            <BallCanvas icon={technology.icon} name={technology.name} />
+          </div>
+        ))}
       </div>
     </>
   );

@@ -11,7 +11,12 @@ import {
 import CanvasLoader from '../Loader';
 
 const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+  // const [decal] = useTexture([props.imgUrl.url]);
+  const [decal] = useTexture([
+    `/assets/tech/${props.name.split(' ')[0].toLowerCase()}.png`,
+  ]);
+  console.log(props);
+
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
@@ -37,7 +42,7 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon, name }) => {
   return (
     <Canvas
       frameloop="demand"
@@ -46,7 +51,7 @@ const BallCanvas = ({ icon }) => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon} name={name} />
       </Suspense>
       <Preload all />
     </Canvas>
