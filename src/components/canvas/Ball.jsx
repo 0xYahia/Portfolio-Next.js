@@ -15,7 +15,6 @@ const Ball = (props) => {
   const [decal] = useTexture([
     `/assets/tech/${props.name.split(' ')[0].toLowerCase()}.png`,
   ]);
-  console.log(props);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>

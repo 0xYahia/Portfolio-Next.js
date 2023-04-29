@@ -53,7 +53,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between relative">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
         className=" flex-col justify-center items-center hidden lg:flex"
         onClick={toggle}
@@ -113,7 +113,11 @@ const Navbar = () => {
       </div>
 
       {isOpen ? (
-        <div className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-light/75 rounded-lg backdrop-blur-md py-32 ">
+        <motion.div
+          initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="min-w-[70vw]  flex-col justify-between items-center hidden lg:flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-light/75 rounded-lg backdrop-blur-md py-32 "
+        >
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink href="/" title="Home" toggle={toggle} />
             <CustomMobileLink href="/about" title="about" toggle={toggle} />
@@ -132,16 +136,16 @@ const Navbar = () => {
             <motion.a
               href="https://twitter.com/mohamedyahia231"
               target="_blank"
-              className="w-6 mx-3"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3 sm:mx-1"
             >
               <TwitterIcon />
             </motion.a>
             <motion.a
               href="https://github.com/MohamedYahia831"
               target="_blank"
-              className="w-6 mx-3 bg-light rounded-full"
+              className="w-6 mx-3 bg-light rounded-full sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -150,14 +154,14 @@ const Navbar = () => {
             <motion.a
               href="https://www.linkedin.com/in/mohamdyahia/"
               target="_blank"
-              className="w-6 ml-3"
+              className="w-6 ml-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
               <LinkedInIcon />
             </motion.a>
           </nav>
-        </div>
+        </motion.div>
       ) : null}
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
@@ -168,5 +172,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// 4:43:45
