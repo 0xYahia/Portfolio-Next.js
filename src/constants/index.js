@@ -153,3 +153,69 @@ export const technologies = [
     icon: docker,
   },
 ];
+
+export const projects = [
+  {
+    name: 'Dawini',
+    description: `Dawini Application is an ecommerce platform designed to cater to the needs of customers who require quick and easy access to medicines.
+      With an extensive range of products available on the platform, customers can conveniently browse through different categories of medicines,
+      view product details, and make purchases with just a few clicks. `,
+    tags: [
+      {
+        name: 'angular',
+        color: 'text-blue-500',
+      },
+      {
+        name: 'node.js',
+        color: ' text-green-500',
+      },
+      {
+        name: 'express',
+        color: ' text-pink-500',
+      },
+      {
+        name: 'mongoose',
+        color: 'text-yellow-500',
+      },
+    ],
+    image: carrent,
+    source_code_link: 'https://github.com/Med-org-ITI/API',
+  },
+  {
+    name: 'Fairy Tales',
+    description: 'Fairy Tales is a Website for Children’s Stories in Egypt.',
+    tags: [
+      {
+        name: 'html',
+        color: 'text-blue-500',
+      },
+      {
+        name: 'css',
+        color: ' text-green-500',
+      },
+      {
+        name: 'js',
+        color: ' text-pink-500',
+      },
+    ],
+    image: tripguide,
+    source_code_link: 'https://github.com/MohamedYahia831/Fairy-Tales',
+  },
+  {
+    name: 'Kasper Template ',
+    description:
+      'Kasper is an organization for artboards founded in Italy and this website is aportfolio.',
+    tags: [
+      {
+        name: 'html',
+        color: 'text-blue-500',
+      },
+      {
+        name: 'css',
+        color: ' text-green-500',
+      },
+    ],
+    image: jobit,
+    source_code_link: 'https://github.com/MohamedYahia831/Kasper-Template',
+  },
+];
