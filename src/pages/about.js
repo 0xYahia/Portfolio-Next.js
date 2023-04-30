@@ -1,10 +1,9 @@
-import Image from "next/image";
-// import profilePic2 from "../../public/images/profile/profile3.JPG";
-import AnimatedText from "../components/AnimatedText";
-import Layout from "../components/Layout";
-import { useEffect, useRef } from "react";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Skills from "@/components/Skills";
+import Image from 'next/image';
+import AnimatedText from '../components/AnimatedText';
+import Layout from '../components/Layout';
+import { useEffect, useRef } from 'react';
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skills from '@/components/Skills';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -19,7 +18,7 @@ const AnimatedNumbers = ({ value }) => {
   }, [isInView, value, motionValue]);
 
   useEffect(() => {
-    springValue.on("change", (latest) => {
+    springValue.on('change', (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
@@ -53,7 +52,7 @@ const About = () => {
             <p className="my-4 font-medium">
               I believe that design is about more than just making things look
               pretty – it's about solving problems and creating intuitive,
-              enjoyable experiences for users.{" "}
+              enjoyable experiences for users.{' '}
             </p>
             <p className="font-medium">
               Whether I'm working on a website, mobile app, or other digital
