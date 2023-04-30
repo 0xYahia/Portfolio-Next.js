@@ -7,6 +7,7 @@ import { SectionWrapper } from '@/hoc';
 import { projects } from '@/constants';
 import { fadeIn, textVariant } from '@/utils/motion';
 import Image from 'next/image';
+import { styles } from '@/styles';
 
 const ProjectCard = ({
   index,
@@ -67,12 +68,8 @@ const Work = () => {
   return (
     <>
       <motion.div variants={textVariant}>
-        <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">
-          My work
-        </p>
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          Projects.
-        </h2>
+        <p className={`${styles.sectionSubText} `}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
