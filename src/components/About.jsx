@@ -9,6 +9,7 @@ import { SectionWrapper } from '@/hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import AnimatedText from '../components/AnimatedText';
 import Layout from '../components/Layout';
+import { styles } from '@/styles';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -137,9 +138,7 @@ const About = () => {
         </Layout>
       </main>
       <motion.div variants={textVariant()}>
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          Overview.
-        </h2>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
