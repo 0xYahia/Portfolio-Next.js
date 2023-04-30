@@ -29,7 +29,7 @@ const Contact = () => {
           className="mt-12 flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="font-medium mb-4">Your Name</span>
+            <span className="font-medium mt-4">Your Name</span>
             <input
               type="text"
               name="name"
@@ -40,7 +40,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="font-medium mb-4">Your Email</span>
+            <span className="font-medium mt-4">Your Email</span>
             <input
               type="email"
               name="email"
@@ -51,7 +51,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="font-medium mb-4">Your Message</span>
+            <span className="font-medium mt-4">Your Message</span>
             <textarea
               rows="7"
               type="message"
@@ -74,7 +74,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        {/* <EarthCanvas /> */}
+        <EarthCanvas />
       </motion.div>
     </div>
   );
