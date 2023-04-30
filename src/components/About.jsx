@@ -36,13 +36,7 @@ const AnimatedNumbers = ({ value }) => {
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt
-      scale={1}
-      transitionSpeed={450}
-      tiltMaxAngleX={45}
-      tiltMaxAngleY={45}
-      className="w-full md:col-span-2 sm:col-span-4  "
-    >
+    <Tilt className="w-full md:col-span-2 sm:col-span-4  ">
       <motion.div
         variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card  flex justify-around "
