@@ -1,20 +1,40 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { eamiljs } from '@emailjs/browser';
 
 import { styles } from '@/styles';
 import EarthCanvas from './canvas/Earth';
 import { SectionWrapper } from '@/hoc';
 import { slideIn } from '@/utils/motion';
 
+const CONTACT_EMAIL = 'mohamdyahia@outlook.com';
+
+// Builds a mailto: link with the subject and body prefilled from the form.
+// RFC 6068 wants line breaks in the body encoded as %0D%0A, so use CRLF.
+const buildMailtoUrl = ({ name, email, message }) => {
+  const subject = `Portfolio contact from ${name.trim()}`;
+  const body = `${message.trim()}\n\nName: ${name.trim()}\nEmail: ${email.trim()}`;
+
+  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body.replace(/\r?\n/g, '\r\n'))}`;
+};
+
 const Contact = () => {
-  const formRef = useRef();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
 
-  const [loading, setLoading] = useState(false);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Hands the prefilled message to the visitor's email app; the page stays put.
+    window.location.href = buildMailtoUrl(form);
+    setSubmitted(true);
+  };
+
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
@@ -23,11 +43,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <form
-          ref={formRef}
-          onSubmit={handleChange}
-          className="mt-12 flex-col gap-8"
-        >
+        <form onSubmit={handleSubmit} className="mt-12 flex-col gap-8">
           <label className="flex flex-col">
             <span className="font-medium mt-4">Your Name</span>
             <input
@@ -35,6 +51,8 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              required
+              autoComplete="name"
               placeholder="What's your name?"
               className="bg-violet-950 py-4 px-6 placeholder:text-slate-400 rounded-lg outline-none border-none font-medium"
             />
@@ -46,6 +64,8 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              required
+              autoComplete="email"
               placeholder="What's your email?"
               className="bg-violet-950 py-4 px-6 placeholder:text-slate-400 rounded-lg outline-none border-none font-medium"
             />
@@ -54,11 +74,11 @@ const Contact = () => {
             <span className="font-medium mt-4">Your Message</span>
             <textarea
               rows="7"
-              type="message"
-              name="name"
+              name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What's you want to say?"
+              required
+              placeholder="What do you want to say?"
               className="bg-violet-950 py-4 px-6 placeholder:text-slate-400 rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -66,8 +86,26 @@ const Contact = () => {
             type="submit"
             className="bg-violet-950 py-3 mt-2 px-8 outline-none w-fit font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? 'Sending..' : 'send'}
+            send
           </button>
+          <p
+            role="status"
+            className={submitted ? 'mt-4 text-sm text-slate-300' : undefined}
+          >
+            {submitted && (
+              <>
+                Your email app should open with your message. If it
+                doesn&apos;t, email me directly at{' '}
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="text-green-400 underline"
+                >
+                  {CONTACT_EMAIL}
+                </a>
+                .
+              </>
+            )}
+          </p>
         </form>
       </motion.div>
       <motion.div
