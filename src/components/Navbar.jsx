@@ -77,13 +77,12 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="about" className="mx-4" />
-          <CustomLink href="#projects" title="Projects" className="mx-4" />
-          <CustomLink href="#articles" title="Articles" className="ml-4" />
+          <CustomLink href="/#about" title="about" className="mx-4" />
+          <CustomLink href="/#projects" title="Projects" className="ml-4" />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com/mohamedyahia231"
+            href="https://x.com/0xYahia"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -92,7 +91,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://github.com/MohamedYahia831"
+            href="https://github.com/0xYahia"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -101,7 +100,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/mohamdyahia/"
+            href="https://www.linkedin.com/in/0xyahia/"
             target="_blank"
             className="w-6 ml-3"
             whileHover={{ y: -2 }}
@@ -120,21 +119,16 @@ const Navbar = () => {
         >
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink href="/" title="Home" toggle={toggle} />
-            <CustomMobileLink href="/about" title="about" toggle={toggle} />
+            <CustomMobileLink href="/#about" title="about" toggle={toggle} />
             <CustomMobileLink
-              href="#projects"
+              href="/#projects"
               title="Projects"
-              toggle={toggle}
-            />
-            <CustomMobileLink
-              href="#articles"
-              title="Articles"
               toggle={toggle}
             />
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
-              href="https://twitter.com/mohamedyahia231"
+              href="https://x.com/0xYahia"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -143,7 +137,7 @@ const Navbar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="https://github.com/MohamedYahia831"
+              href="https://github.com/0xYahia"
               target="_blank"
               className="w-6 mx-3 bg-light rounded-full sm:mx-1"
               whileHover={{ y: -2 }}
@@ -152,7 +146,7 @@ const Navbar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/mohamdyahia/"
+              href="https://www.linkedin.com/in/0xyahia/"
               target="_blank"
               className="w-6 ml-3 sm:mx-1"
               whileHover={{ y: -2 }}

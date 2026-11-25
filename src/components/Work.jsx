@@ -77,11 +77,8 @@ const Work = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-gray-400 text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          A few projects I&apos;ve built. Each card links to the project&apos;s
+          source code on GitHub.
         </motion.p>
       </div>
       <div className="mt-20 grid w-full grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-10">
@@ -93,6 +90,6 @@ const Work = () => {
   );
 };
 
-export default SectionWrapper(Work, '');
+export default SectionWrapper(Work, 'projects');
 
 // 1:55:50
