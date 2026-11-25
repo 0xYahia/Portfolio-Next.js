@@ -82,7 +82,7 @@ const Navbar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com/mohamedyahia231"
+            href="https://x.com/0xYahia"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -91,7 +91,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="https://github.com/MohamedYahia831"
+            href="https://github.com/0xYahia"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -100,7 +100,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/mohamdyahia/"
+            href="https://www.linkedin.com/in/0xyahia/"
             target="_blank"
             className="w-6 ml-3"
             whileHover={{ y: -2 }}
@@ -128,7 +128,7 @@ const Navbar = () => {
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
-              href="https://twitter.com/mohamedyahia231"
+              href="https://x.com/0xYahia"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -137,7 +137,7 @@ const Navbar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="https://github.com/MohamedYahia831"
+              href="https://github.com/0xYahia"
               target="_blank"
               className="w-6 mx-3 bg-light rounded-full sm:mx-1"
               whileHover={{ y: -2 }}
@@ -146,7 +146,7 @@ const Navbar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/mohamdyahia/"
+              href="https://www.linkedin.com/in/0xyahia/"
               target="_blank"
               className="w-6 ml-3 sm:mx-1"
               whileHover={{ y: -2 }}

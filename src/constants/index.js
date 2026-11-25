@@ -142,7 +142,7 @@ export const projects = [
       },
     ],
     image: fairyTales,
-    source_code_link: 'https://github.com/MohamedYahia831/Fairy-Tales',
+    source_code_link: 'https://github.com/0xYahia/Fairy-Tales',
   },
   {
     name: 'Kasper Template',
@@ -159,7 +159,7 @@ export const projects = [
       },
     ],
     image: kasper,
-    source_code_link: 'https://github.com/MohamedYahia831/Kasper-Template',
+    source_code_link: 'https://github.com/0xYahia/Kasper-Template',
   },
 ];
 

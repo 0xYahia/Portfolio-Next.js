@@ -17,7 +17,7 @@ const Footer = () => {
             Yahia
           </Link>
         </div>
-        <Link href="/" className="text-light">
+        <Link href="mailto:mohamdyahia@outlook.com" className="text-light">
           Say hello
         </Link>
       </Layout>
